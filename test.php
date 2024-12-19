@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTest.css">
     <title>Convertisseur</title>
 </head>
 
@@ -37,7 +37,7 @@
         $messageErreur = "Veuillez entrer un montant numérique valide.";
     }
     ?>
-    <h1>Convertisseur de monnaies</h1>
+        <h1>Convertisseur de monnaies</h1>
     <div class="container">
         <form method="GET" action="">
             <h3>Montant à convertir</h3>
@@ -45,7 +45,7 @@
 
             <h3>Devise source</h3>
             <select name="devise_source" required>
-                <?php foreach ($tauxConversion as $devise => $taux):?>
+                <?php foreach ($tauxConversion as $devise => $taux): ?>
                     <option value="<?php echo htmlspecialchars($devise); ?>">
                         <?php echo strtoupper($devise); ?>
                     </option>
