@@ -33,26 +33,21 @@
         } else {
             $messageErreur = "Les devises choisies ne sont pas valides.";
         }
-    } else if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        $messageErreur = "Veuillez entrer un montant numérique valide.";
-    }
+    } 
     ?>
         <h1>Convertisseur de monnaies</h1>
     <div class="container">
         <form method="GET" action="">
-            <h3>Montant à convertir</h3>
-            <input type="number" name="montant" step="any" placeholder="Ex : 10" required />
+            <input type="number" name="montant" step="any" placeholder="Montant" required />
 
-            <h3>Devise source</h3>
             <select name="devise_source" required>
                 <?php foreach ($tauxConversion as $devise => $taux): ?>
                     <option value="<?php echo htmlspecialchars($devise); ?>">
                         <?php echo strtoupper($devise); ?>
                     </option>
                 <?php endforeach; ?>
-            </select>
-
-            <h3>Devise cible</h3>
+            </select>                         
+            <p>&rightarrow;</p>
             <select class="devise-cible" name="devise_cible" required>
                 <?php foreach ($tauxConversion as $devise => $taux): ?>
                     <option value="<?php echo htmlspecialchars($devise); ?>">

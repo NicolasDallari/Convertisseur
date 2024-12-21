@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(142, 165, 174);
+    background-color: rgb(7, 14, 71);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -15,12 +15,52 @@ h1 {
     text-align: center;
     font-size: 5rem;
     padding-top: 100px;
+    color: aliceblue;
+    text-shadow: rgb(0, 0, 0) 0px 5px 15px;
 
 }
 .container {
-    background-color: aliceblue;
-    width: 900px;
-    height: 20%;
+    background-color: rgb(245, 245, 245);
+    width: 60vw;
+    max-width:80rem;
+    height: 20rem;
     text-align: center;
     margin: 0 auto;
+    border-radius: 1.5rem;
+    margin-top: 80px;
+    padding-top: 30px; 
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
 }
+form input[type="number"], 
+    form select {
+        width: 30%; /* Largeur des champs */
+        height: 60px; /* Hauteur des champs */
+        font-size: 20px; /* Taille de police */
+        padding: 10px; /* Espacement interne */
+        border: 1px solid #ccc; /* Bordure */
+        border-radius: 10px; /* Coins arrondis */
+    }
+    form button {
+        height: 50px; /* Hauteur du bouton */
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 8px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+    form p {
+        display: inline-block; /* Pour qu'il soit sur la même ligne que les selects si nécessaire */
+        font-size: 30px; /* Taille de police */
+        font-weight: bold; /* Optionnel : met le texte en gras */
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
