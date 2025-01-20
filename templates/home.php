@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleTest.css">
-    <title>Convertisseur</title>
-</head>
-
-<body>
-    <?php
+<link rel="stylesheet" href="css/style.css" >
+<?php
     // Inclure le fichier des taux de conversion
-    require "tableaux.php";
+    require "../app/data/tableaux.php";
     $resultat = ''; // Initialiser la variable pour le résultat
     $messageErreur = '';
-
     // Vérification si le formulaire est soumis
     if (
         isset($_GET['montant'], $_GET['devise_source'], $_GET['devise_cible']) &&
@@ -40,7 +30,7 @@
         <form method="GET" action="">
             <input type="number" name="montant" step="any" placeholder="Montant" required />
 
-            <select name="devise_source" required>
+            <select name="devise_source" id="devise-source" required>
                 <?php foreach ($tauxConversion as $devise => $taux): ?>
                     <option value="<?php echo htmlspecialchars($devise); ?>">
                         <?php echo strtoupper($devise); ?>
@@ -60,13 +50,9 @@
                 <button type="submit">Convertir</button>
             </div>
         </form>
-
         <?php if ($resultat): ?>
             <h2>Résultat : <?php echo htmlspecialchars($resultat); ?></h2>
         <?php elseif ($messageErreur): ?>
             <h2 style="color: red;"><?php echo htmlspecialchars($messageErreur); ?></h2>
         <?php endif; ?>
     </div>
-</body>
-
-</html>
