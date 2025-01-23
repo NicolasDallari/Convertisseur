@@ -6,13 +6,13 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('../docs/image/imageCochon-min.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  height: 100vh; 
-  margin: 0; 
-  font-family: Arial, sans-serif; 
+  background-image: url("../docs/image/imageCochon-min.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
   flex-direction: column;
   justify-content: center;
 }
@@ -21,7 +21,8 @@ h1 {
   font-size: 4.5rem;
   padding-top: 100px;
   color: #868686;
-  text-shadow: 1px 1px 0px #f1f1f1, -1px 12px 10px rgba(0, 0, 0, 0.15), 0px 20px 14px rgba(0, 0, 0, 0.1), 0px 16px 8px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 0px #f1f1f1, -1px 12px 10px rgba(0, 0, 0, 0.15),
+    0px 20px 14px rgba(0, 0, 0, 0.1), 0px 16px 8px rgba(0, 0, 0, 0.1);
 }
 .container {
   background-color: rgb(245, 245, 245);
@@ -37,20 +38,19 @@ h1 {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-
 form input[type="number"],
 form select {
-  width: 30%; /* Largeur des champs */
-  height: 60px; /* Hauteur des champs */
-  font-size: 20px; /* Taille de police */
-  padding: 10px; /* Espacement interne */
-  border: 1px solid #030303; /* Bordure */
-  border-radius: 10px; /* Coins arrondis */
+  width: 25%; 
+  height: 60px; 
+  font-size: 20px; 
+  padding: 10px; 
+  border: 1px solid #030303;
+  border-radius: 10px; 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 form button {
-  height: 60px; /* Hauteur du bouton */
+  height: 60px; 
   font-size: 33px;
   padding: 8px 20px;
   margin-top: 20px;
@@ -63,15 +63,14 @@ form button {
   cursor: pointer;
   border: none;
 }
-
 form button:hover {
-  height: 62px; /* Hauteur du bouton */
+  height: 62px; 
   font-size: 34px;
 }
 form p {
-  display: inline-block; /* Pour qu'il soit sur la même ligne que les selects si nécessaire */
-  font-size: 30px; /* Taille de police */
-  font-weight: bold; /* Optionnel : met le texte en gras */
+  display: inline-block; 
+  font-size: 20px; 
+  font-weight: lighter; 
 }
 .containerConvertir {
   display: flex;
@@ -87,17 +86,24 @@ form p {
   font-size: 50px;
 }
 .containerresultat {
-  display: flex; /* Utiliser un conteneur flexible */
-  flex-direction: column; /* Aligner les éléments horizontalement */
+  display: flex; 
+  flex-direction: column; 
 }
-
 .deviceSource,
 .deviceCible {
   margin: 5px 0px;
-  text-align: left; /* Aligner le texte à gauche */
+  text-align: left; 
 }
 .deviceSource .equal {
-    font-size: inherit; 
-    line-height: 1; 
-    vertical-align: middle; 
+  font-size: inherit;
+  line-height: 1;
+  vertical-align: middle;
+}
+.arrow {
+  font-size: 3rem; 
+  font-weight: bold; 
+}
+h2 {
+  font-weight: lighter;
+  font-family: "Playfair Display", serif;
 }
