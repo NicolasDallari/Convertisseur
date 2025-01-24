@@ -109,18 +109,14 @@ label {
   font-size: 3rem;
   font-weight: bold;
 }
-/* TEXTES SPÉCIFIQUES */
-h2 {
-  font-weight: lighter;
-}
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
   .container {
     width: 90vw;
     height: 65%;
     max-height: 410px;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
   form {
     display: flex;
@@ -152,7 +148,6 @@ h2 {
   .deviceCible {
     font-size: 1.4rem;
   }
- 
 }
 
 @media screen and (max-width: 768px) {
@@ -163,5 +158,5 @@ h2 {
   h1 {
     font-size: 2.5rem;
     padding-top: 30px;
-  }  
+  }
 }
