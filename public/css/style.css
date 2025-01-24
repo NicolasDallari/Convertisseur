@@ -1,3 +1,4 @@
+/* RESET */
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+/* TITRE PRINCIPAL */
 h1 {
   text-align: center;
   font-size: 4.5rem;
@@ -24,6 +26,7 @@ h1 {
   text-shadow: 1px 1px 0px #f1f1f1, -1px 12px 10px rgba(0, 0, 0, 0.15),
     0px 20px 14px rgba(0, 0, 0, 0.1), 0px 16px 8px rgba(0, 0, 0, 0.1);
 }
+/* CONTAINER PRINCIPAL */
 .container {
   background-color: rgb(245, 245, 245);
   width: 60vw;
@@ -38,6 +41,7 @@ h1 {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+/* FORMULAIRES : INPUTS, SELECTS ET BOUTONS */
 form input[type="number"],
 form select {
   width: 25%;
@@ -67,11 +71,13 @@ form button:hover {
   height: 62px;
   font-size: 34px;
 }
+/* LABELS */
 label {
   display: inline-block;
   font-size: 20px;
   font-weight: lighter;
 }
+/* CONTENEURS */
 .containerConvertir {
   display: flex;
   flex-direction: row-reverse;
@@ -103,19 +109,18 @@ label {
   font-size: 3rem;
   font-weight: bold;
 }
+/* TEXTES SPÉCIFIQUES */
 h2 {
   font-weight: lighter;
-  font-family: "Playfair Display", serif;
 }
-/* responsive phone format */
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
   .container {
     width: 90vw;
-    max-width: 35rem;
-    height: 30rem;
-  }
-  h1 {
-    font-size: 3rem;
+    height: 65%;
+    max-height: 410px;
+    justify-content: center; 
+    align-items: center; 
   }
   form {
     display: flex;
@@ -124,6 +129,7 @@ h2 {
   form input[type="number"],
   form select {
     width: 100%;
+    height: auto;
   }
   .containerConvertir {
     display: flex;
@@ -146,4 +152,16 @@ h2 {
   .deviceCible {
     font-size: 1.4rem;
   }
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+    margin-top: 20%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 30px;
+  }  
 }
