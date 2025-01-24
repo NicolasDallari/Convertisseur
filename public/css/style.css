@@ -40,17 +40,17 @@ h1 {
 }
 form input[type="number"],
 form select {
-  width: 25%; 
-  height: 60px; 
-  font-size: 20px; 
-  padding: 10px; 
+  width: 25%;
+  height: 60px;
+  font-size: 20px;
+  padding: 10px;
   border: 1px solid #030303;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 form button {
-  height: 60px; 
+  height: 60px;
   font-size: 33px;
   padding: 8px 20px;
   margin-top: 20px;
@@ -64,13 +64,13 @@ form button {
   border: none;
 }
 form button:hover {
-  height: 62px; 
+  height: 62px;
   font-size: 34px;
 }
-form p {
-  display: inline-block; 
-  font-size: 20px; 
-  font-weight: lighter; 
+label {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: lighter;
 }
 .containerConvertir {
   display: flex;
@@ -86,13 +86,13 @@ form p {
   font-size: 50px;
 }
 .containerresultat {
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 .deviceSource,
 .deviceCible {
   margin: 5px 0px;
-  text-align: left; 
+  text-align: left;
 }
 .deviceSource .equal {
   font-size: inherit;
@@ -100,10 +100,50 @@ form p {
   vertical-align: middle;
 }
 .arrow {
-  font-size: 3rem; 
-  font-weight: bold; 
+  font-size: 3rem;
+  font-weight: bold;
 }
 h2 {
   font-weight: lighter;
   font-family: "Playfair Display", serif;
+}
+/* responsive phone format */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90vw;
+    max-width: 35rem;
+    height: 30rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form input[type="number"],
+  form select {
+    width: 100%;
+  }
+  .containerConvertir {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  form button {
+    height: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .deviceSource {
+    font-size: 1rem;
+  }
+  .deviceCible {
+    font-size: 1.4rem;
+  }
 }

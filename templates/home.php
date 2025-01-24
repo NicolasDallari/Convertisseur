@@ -4,7 +4,7 @@
 <div class="container">
     <form method="GET" action="">
         <input type="number" name="montant" step="any" placeholder="Montant" required />
-        <p>De</p>
+        <label for="devise-source">DE:</label>
         <select name="devise_source" id="devise-source" required>
             <?php foreach ($tauxConversion as $devise => $taux): ?>
                 <option value="<?php echo htmlspecialchars($devise); ?>">
@@ -12,11 +12,11 @@
                 </option>
             <?php endforeach; ?>
         </select>
-        <p>Vers</p>
-        <select class="devise-cible" name="devise_cible" required>
+        <label for="devise-cible">VERS :</label>
+        <select id="devise-cible" class="devise-cible" name="devise_cible" required>
             <?php foreach ($tauxConversion as $devise => $taux): ?>
                 <option value="<?php echo htmlspecialchars($devise); ?>">
-                    <?php echo  htmlspecialchars($devise); ?>
+                    <?php echo htmlspecialchars($devise); ?>
                 </option>
             <?php endforeach; ?>
         </select>
