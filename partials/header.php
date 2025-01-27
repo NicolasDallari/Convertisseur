@@ -9,6 +9,7 @@
     <meta name="author" content="VotreNomOuEntreprise">
     <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="docs/image/favicon-32x32.png" type="image/x-icon">
     <title>Convertisseur de Devises </title>
 </head>
 
